@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+body{
+  background: var(--bg-url) no-repeat center/cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root{
+  --text-color: #fff;
+  --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(0,0,0,0.02);
+  --border-img: #fff;
+  --social-links-hover: rgba(255, 255, 255, 0.2);
+}
+.light{
+  --text-color:#000;
+  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --suface-color: rgba(0,0,0,0.05);
+  --surface-color-hover: rgba(0,0,0,0.02);
+  --border-img: #000;
+}
+
+#container{
+  margin: 58px auto 0px;
+  width: 368px;
+}
+
+#container img{
+  width: 112px;
+  border-radius: 365px;
+  border: 3px solid var(--border-img); /* Aqui está a borda */
+}
+
+#profile{
+  text-align: center;
+  padding: 24px;
+}
+
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+}
+#links{
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#links li {
+    border: 1px solid var(--stroke-color);
+    border-radius: 8px;
+    justify-content: center;
+    padding: 16px 24px;
+    background-color: var(--suface-color);
+}
+
+#links li a {
+   text-decoration: none;
+}
+
+#links li a:hover{
+  background-color: var(--surface-color-hover);
+  text-decoration: underline;
+}
+
+
+#social-links{
+  display: flex;
+
+  padding: 24px 0;
+  font-size: 24px;
+  justify-content: center;
+}
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  transition: background 0.2%;
+}
+#social-links a:hover{
+  background-color: var(--social-links-hover);
+  border-radius: 50%;
+}
